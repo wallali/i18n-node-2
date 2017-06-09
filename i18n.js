@@ -60,7 +60,7 @@ var i18n = module.exports = function (opt) {
 			self.readFile(locale);
 		});
 
-		this.defaultLocale = opt.locales[0];
+		this.defaultLocale = opt.defaultLocale || opt.locales[0];
 	}
 
 	// Set the locale to the default locale
